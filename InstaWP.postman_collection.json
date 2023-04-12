@@ -1,0 +1,713 @@
+{
+	"info": {
+		"_postman_id": "0fb4ce50-ac54-4c1d-b7d2-bc532b7572ea",
+		"name": "InstaWP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"germaine45@example.org\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"germaine45@example.org\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:56:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:56:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": true,\n    \"message\": \"Login Successful\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Donnie Harris\",\n        \"email\": \"germaine45@example.org\",\n        \"email_verified_at\": \"2023-04-11T19:07:46.000000Z\",\n        \"created_at\": \"2023-04-11T19:07:46.000000Z\",\n        \"updated_at\": \"2023-04-11T19:07:46.000000Z\",\n        \"balance\": 450,\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTVhZDA5MzI5NjNiZjk5Yzk4YjRiY2Q4ZGU5ZTg0YmY5NDdjNzZiNjA1YWRlM2M2ZTdlM2VkYjg0NzczYjZmOGUzOTEzYmMyNzhhNTAzNzUiLCJpYXQiOjE2ODEyNzU0MTIuMDUwOTA1LCJuYmYiOjE2ODEyNzU0MTIuMDUwOTA3LCJleHAiOjE3MTI4OTc4MTIuMDQwMjU1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.JPSBYPrVojxz24yOqaPXtwEV_5atIFKyp6rIXcz86RPQGzMycCXOr3tVMBa5ziEFClekMtkbQChmAMHcmWsBOwuAmVlIMreBkOU6-bBGGNdOKwxbdqKLylKkwaRvCNMQ9hCUHFchwbdHHesdncZpguGjMcA2Dcl3JRYYiDAppptKM-fZeZqpl1Tbq3xeYhpbP5SCg-q2A3xF-SdcW5X1AEGg63x9oS2RqB8VWBnT6WZnLhyLn9mlQ4GX8OHGMTP08yvVBHjA4FAoXyvaxcg5-mh4L3bMWt3slHjrhwboSNS7RnRMdRgDS8eME_lgVwpAc4ZbtuyhPu6TE18CmNQ2fvfB4O2cZyQd44O_cWGLVh5MleUS_aqnTAMj8u1bijppNTQ8AbcG6QoUXqK7RMSyTKz_FGUz80i0sml0IljqQrOBJ8hm5rYJBTzywyfARLzdA_ALxO4iy0tam6acMyjDbguV9pNPkbRpaSMl_-XMQHfCAC-KAOvkTHpe0Xl5fDmUfIBTmR3Iwwus3CN3cHzqjGktS8IE0oVFamwxO-BVEsfSWCyggtCn1h5zX0S7utTTyV1wO48X3z7BQAvvC9f3rJwGPBag-_Br7L98Qo1nrDU-toeouq4aU9OF48Ghq-ozQ-CvrVB7z1_FmQfZxZAtrJwQyoLS7aPxcQUw2wYU4b4\"\n    }\n}"
+				},
+				{
+					"name": "Invalid Creds",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"germaine45@example.org\",\n    \"password\": \"sdfdsfdsfs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:41:58 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:41:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 400,\n    \"success\": false,\n    \"message\": \"Invalid Credentials\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Balance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2U3NWM2YWQ2YTRlMDY1ZThmODZlMjk5MzRhNjVhMTg1OWE2NWM5M2MyMjhlZGUxYzE3YTk0MWNmNTE3ZjkyYWI4MmNlMmZkYTVhMzQxZDAiLCJpYXQiOjE2ODEyNzQ2MjIuMzMwMTY2LCJuYmYiOjE2ODEyNzQ2MjIuMzMwMTY4LCJleHAiOjE3MTI4OTcwMjIuMzE4MTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ct0ar8uhnkqqXUPZUkiiAv1ktU8Kkaea8ifL2yMWswu9bbrSNemsy34iJUqCXQX3skRT7a2f8guVCwJ-lu6kZD8GheD-a6aN-3TqmMfyBvueFat9HxfkmjccqObxk5-Ibq70IhE_qzfK7AOReysPif-yxmmXPFrPoRS8ZBIwtwRg9GUd2NTlIiYt7G8HyyJFU-FfjD2VqYO6QGrYT6aj5iQ2GAff1upH3vqA_RUnzJFz_SVRXhy-8TfANvq7BwITD61ysD2DRfF6tzsM_wPiRU_hSZxVR8gog_J4YjyTZZSx1UhjGDfNfRIr5ptj7pTgZ41JfHijx584kbQcbvwT6vv0aoF0KJK6KfEe8DnAuNMCEGNcDhRkv3gP0v0P4JbHlDaQhGeAK9TGpJqu5uig7CwjXWf6yokHmjj_C_e29P-y4JXLU0GJLw_SAvvy8tlPDNOgnVN6ug1kQFWT3ZBmw_eBCC9lEwIrDKUsrjjyaeg0QT2htpka8R-gjQ4x4hxfNy-t0pRBHaex19NV0kUlf11cSH-5sPSAatbJr6eoi-rKtlsFHoh6nT3vEjVO0yPDy2nRXSVN-Sngma-64HRo8B9_7eEeqCeJM67-KFt_JRhiWOTkDja9yOLEakOWIoyqVxAW3JNU6W0YYhUlM1bUztJXzqH1AgW4-1ABw2KibhM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 150\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/balance",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"balance"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 150\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/balance",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:48:20 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:48:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": true,\n    \"message\": \"Balance Added\",\n    \"data\": \"450\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Balance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2U3NWM2YWQ2YTRlMDY1ZThmODZlMjk5MzRhNjVhMTg1OWE2NWM5M2MyMjhlZGUxYzE3YTk0MWNmNTE3ZjkyYWI4MmNlMmZkYTVhMzQxZDAiLCJpYXQiOjE2ODEyNzQ2MjIuMzMwMTY2LCJuYmYiOjE2ODEyNzQ2MjIuMzMwMTY4LCJleHAiOjE3MTI4OTcwMjIuMzE4MTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ct0ar8uhnkqqXUPZUkiiAv1ktU8Kkaea8ifL2yMWswu9bbrSNemsy34iJUqCXQX3skRT7a2f8guVCwJ-lu6kZD8GheD-a6aN-3TqmMfyBvueFat9HxfkmjccqObxk5-Ibq70IhE_qzfK7AOReysPif-yxmmXPFrPoRS8ZBIwtwRg9GUd2NTlIiYt7G8HyyJFU-FfjD2VqYO6QGrYT6aj5iQ2GAff1upH3vqA_RUnzJFz_SVRXhy-8TfANvq7BwITD61ysD2DRfF6tzsM_wPiRU_hSZxVR8gog_J4YjyTZZSx1UhjGDfNfRIr5ptj7pTgZ41JfHijx584kbQcbvwT6vv0aoF0KJK6KfEe8DnAuNMCEGNcDhRkv3gP0v0P4JbHlDaQhGeAK9TGpJqu5uig7CwjXWf6yokHmjj_C_e29P-y4JXLU0GJLw_SAvvy8tlPDNOgnVN6ug1kQFWT3ZBmw_eBCC9lEwIrDKUsrjjyaeg0QT2htpka8R-gjQ4x4hxfNy-t0pRBHaex19NV0kUlf11cSH-5sPSAatbJr6eoi-rKtlsFHoh6nT3vEjVO0yPDy2nRXSVN-Sngma-64HRo8B9_7eEeqCeJM67-KFt_JRhiWOTkDja9yOLEakOWIoyqVxAW3JNU6W0YYhUlM1bUztJXzqH1AgW4-1ABw2KibhM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/balance",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"balance"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/balance",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:53:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 04:53:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": true,\n    \"message\": \"Balance\",\n    \"data\": 450\n}"
+				}
+			]
+		},
+		{
+			"name": "Order Cookies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2U3NWM2YWQ2YTRlMDY1ZThmODZlMjk5MzRhNjVhMTg1OWE2NWM5M2MyMjhlZGUxYzE3YTk0MWNmNTE3ZjkyYWI4MmNlMmZkYTVhMzQxZDAiLCJpYXQiOjE2ODEyNzQ2MjIuMzMwMTY2LCJuYmYiOjE2ODEyNzQ2MjIuMzMwMTY4LCJleHAiOjE3MTI4OTcwMjIuMzE4MTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Ct0ar8uhnkqqXUPZUkiiAv1ktU8Kkaea8ifL2yMWswu9bbrSNemsy34iJUqCXQX3skRT7a2f8guVCwJ-lu6kZD8GheD-a6aN-3TqmMfyBvueFat9HxfkmjccqObxk5-Ibq70IhE_qzfK7AOReysPif-yxmmXPFrPoRS8ZBIwtwRg9GUd2NTlIiYt7G8HyyJFU-FfjD2VqYO6QGrYT6aj5iQ2GAff1upH3vqA_RUnzJFz_SVRXhy-8TfANvq7BwITD61ysD2DRfF6tzsM_wPiRU_hSZxVR8gog_J4YjyTZZSx1UhjGDfNfRIr5ptj7pTgZ41JfHijx584kbQcbvwT6vv0aoF0KJK6KfEe8DnAuNMCEGNcDhRkv3gP0v0P4JbHlDaQhGeAK9TGpJqu5uig7CwjXWf6yokHmjj_C_e29P-y4JXLU0GJLw_SAvvy8tlPDNOgnVN6ug1kQFWT3ZBmw_eBCC9lEwIrDKUsrjjyaeg0QT2htpka8R-gjQ4x4hxfNy-t0pRBHaex19NV0kUlf11cSH-5sPSAatbJr6eoi-rKtlsFHoh6nT3vEjVO0yPDy2nRXSVN-Sngma-64HRo8B9_7eEeqCeJM67-KFt_JRhiWOTkDja9yOLEakOWIoyqVxAW3JNU6W0YYhUlM1bUztJXzqH1AgW4-1ABw2KibhM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cookies\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/purchase-cookies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"purchase-cookies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Insufficient Balance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cookies\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/purchase-cookies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"purchase-cookies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:35:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:35:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "50"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 400,\n    \"success\": false,\n    \"message\": \"Insufficient Balance\"\n}"
+				},
+				{
+					"name": "Successfull",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cookies\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/purchase-cookies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"purchase-cookies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:42:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:42:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": true,\n    \"message\": \"Order Placed\",\n    \"data\": {\n        \"new_balance\": 482\n    }\n}"
+				},
+				{
+					"name": "Less than 3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cookies\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/purchase-cookies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"purchase-cookies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:42:19 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:42:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 400,\n    \"success\": false,\n    \"message\": \"The cookies field must be at least 3.\"\n}"
+				},
+				{
+					"name": "More than 100",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cookies\": 150\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/purchase-cookies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"purchase-cookies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:42:34 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 05:42:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "55"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 400,\n    \"success\": false,\n    \"message\": \"The cookies field must not be greater than 100.\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:8000/api"
+		}
+	]
+}
